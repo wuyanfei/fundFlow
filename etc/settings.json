@@ -1,0 +1,69 @@
+{
+"logs":{
+	"growth":"/opt/node-pro/logs/growth.log",
+	"ddSort":"/opt/node-pro/logs/ddSort.log",
+	"httpTool":"/opt/node-pro/logs/httpTool.log",
+	"boardSort":"/opt/node-pro/logs/boardSort.log",
+	"generate":"/opt/node-pro/logs/generate.log",
+	"getBoardInfo":"/opt/node-pro/logs/getBoardInfo.log",
+	"opMeal":"/opt/node-pro/logs/opMeal.log",
+	"getStockInfo":"/opt/node-pro/logs/getStockInfo.log",
+	"mainCapital":"/opt/node-pro/logs/mainCapital.log",
+	"stocksUnderBoard":"/opt/node-pro/logs/stocksUnderBoard.log",
+	"stocksUnderBoardSort":"/opt/node-pro/logs/stocksUnderBoardSort.log",
+"validStockCode":"/opt/node-pro/logs/validStockCode.log",
+"salePoint":"/opt/node-pro/logs/salePoint.log",
+"stpool":"/opt/node-pro/logs/stpool.log"
+	},
+
+"logUrl":"http://127.0.0.1:10060/logsPost",
+
+"postUrl":{
+"timeout":10000,
+"maxSockets":2000,
+"url":"http://127.0.0.1:10050/ReceiverCapital"
+},
+
+"redis":"172.16.39.31:6390",
+
+"overtime":1501,
+"timeout":{
+	"request":50000,
+	"fetch":50000,
+	"post":20000
+	},
+"intervalTime":{
+"board":55000,
+"ddSort":55000,
+"growth":55000,
+"main":55000,
+"stocksUnderBoard":3600000,
+"stocksUnderBoardSort":3600000,
+"stocksUnderMarketConcerns":55000,
+"stpool":3600000
+},
+"url":{
+"inflowsStrength":"http://hqdata.compass.cn/test/zcr.py/stockCapital?cmd=<SC>|<ID>|",
+"indexCode":"SHHQ000001,SZHQ399001,SZHQ399005,SZHQ399006,SHHQ000002,SHHQ000003",
+"stockBelongBoard":"http://hqdata.compass.cn/test/board.py/stockBoards?cmd=CODE|",
+"allStockCodes":"http://hqdata.compass.cn/test/zcr.py/codeList?cmd=",
+"board":"http://hqdata.compass.cn/test/zcr.py/boardCapital?cmd=<BC>|<BD>|",
+"allBoardCodes":"http://hqdata.compass.cn/test/zcr.py/boardList?cmd=",
+"stocksUnderBoard":"http://hqdata.compass.cn/test/zcr.py/boardStocks?cmd=<BC>|",
+"boardsReferStockCode":"http://hqdata.compass.cn/test/board.py/stockBoards?cmd=<SC>|",
+"main":"http://172.16.39.143/znz/dds/batch/142",
+"stpool":"http://172.16.39.143/znz/dds/batch/109",
+"code2id":"http://hqdata.compass.cn/test/zcr.py/code2Id?cmd=<SC>|",
+"growth":"http://hqdata.compass.cn/zcr/tmttop50.txt?",
+"ddSort":"http://172.16.39.143/znz/dds/batch/30",
+"ddx":"http://hqdata.compass.cn/test/ddx.py/topgt100.znzDo?cmd=100|",
+"ddy":"http://hqdata.compass.cn/test/ddy.py/topgt100.znzDo?cmd=100|",
+"ddz":"http://hqdata.compass.cn/test/ddz.py/topgt100.znzDo?cmd=100|",
+"rightOut":"http://172.16.39.143/znz/dds/dynamic/<SC>/23?num=-1",
+"opMeal":"http://data01.znz.finance.bj1.aliyk.com/stkOpMeal/<SC>.txt?",
+"selection":"http://172.16.39.143/znz/dds/batch/151",
+"saleOfPoint":"http://172.16.39.143/znz/wav2",
+"marketRatio":"http://hqdata.compass.cn/zcr/boardRatio.txt?",
+"selectionModel":"http://172.16.39.143/znz/dds/raw"
+}
+}
