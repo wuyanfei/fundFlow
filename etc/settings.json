@@ -1,47 +1,8 @@
 {
-"logs":{
-	"growth":"/opt/node-pro/logs/growth.log",
-	"ddSort":"/opt/node-pro/logs/ddSort.log",
-	"httpTool":"/opt/node-pro/logs/httpTool.log",
-	"boardSort":"/opt/node-pro/logs/boardSort.log",
-	"generate":"/opt/node-pro/logs/generate.log",
-	"getBoardInfo":"/opt/node-pro/logs/getBoardInfo.log",
-	"opMeal":"/opt/node-pro/logs/opMeal.log",
-	"getStockInfo":"/opt/node-pro/logs/getStockInfo.log",
-	"mainCapital":"/opt/node-pro/logs/mainCapital.log",
-	"stocksUnderBoard":"/opt/node-pro/logs/stocksUnderBoard.log",
-	"stocksUnderBoardSort":"/opt/node-pro/logs/stocksUnderBoardSort.log",
-"validStockCode":"/opt/node-pro/logs/validStockCode.log",
-"salePoint":"/opt/node-pro/logs/salePoint.log",
-"stpool":"/opt/node-pro/logs/stpool.log"
-	},
-
 "logUrl":"http://127.0.0.1:10060/logsPost",
-
-"postUrl":{
-"timeout":10000,
-"maxSockets":2000,
-"url":"http://127.0.0.1:10050/ReceiverCapital"
-},
-
-"redis":"172.16.39.31:6390",
-
-"overtime":1501,
-"timeout":{
-	"request":50000,
-	"fetch":50000,
-	"post":20000
-	},
-"intervalTime":{
-"board":55000,
-"ddSort":55000,
-"growth":55000,
-"main":55000,
-"stocksUnderBoard":3600000,
-"stocksUnderBoardSort":3600000,
-"stocksUnderMarketConcerns":55000,
-"stpool":3600000
-},
+"pushUrl":"http://127.0.0.1:10050/ReceiverCapital"
+"fetchUrl":"http://127.0.0.1:10050/fetchData"
+"redis":"172.16.33.203:6380",
 "url":{
 "inflowsStrength":"http://hqdata.compass.cn/test/zcr.py/stockCapital?cmd=<SC>|<ID>|",
 "indexCode":"SHHQ000001,SZHQ399001,SZHQ399005,SZHQ399006,SHHQ000002,SHHQ000003",
