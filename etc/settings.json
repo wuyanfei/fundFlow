@@ -1,7 +1,7 @@
 {
 "logUrl":"http://127.0.0.1:10060/logsPost",
-"pushUrl":"http://127.0.0.1:10050/ReceiverCapital"
-"fetchUrl":"http://127.0.0.1:10050/fetchData"
+"pushUrl":"http://127.0.0.1:10080/ReceiverCapital",
+"fetchUrl":"http://127.0.0.1:10080/fetchData",
 "redis":"172.16.33.203:6380",
 "url":{
 "inflowsStrength":"http://hqdata.compass.cn/test/zcr.py/stockCapital?cmd=<SC>|<ID>|",
